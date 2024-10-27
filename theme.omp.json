@@ -53,7 +53,7 @@
 			"type": "path"
 		  },
 		  {
-			"background": "#378504",
+			"background": "#00b478",
 			"foreground": "#f2f3f8",
 			"background_templates": [
 			  "{{ if or (.Working.Changed) (.Staging.Changed) }}#f2b600{{ end }}",
