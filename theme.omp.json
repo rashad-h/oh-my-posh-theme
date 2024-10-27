@@ -113,10 +113,25 @@
 		"alignment": "left",
 		"newline": true,
 		"segments": [
-		  {
+          {
 			"foreground": "#ff0040",
 			"style": "plain",
-			"template": "\u2570\u2500 {{ if .Root }}#{{else}}${{end}}",
+			"template": "\u2570\u2500 ",
+			"type": "text"
+		  },
+		  {
+            "foreground": "#ff0040",
+            "properties": {
+              "fetch_version": true
+            },
+            "style": "plain",
+            "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ end }}) ",
+            "type": "python"
+          },
+          {
+			"foreground": "#ff0040",
+			"style": "plain",
+			"template": "{{ if .Root }}#{{else}}${{end}}",
 			"type": "text"
 		  }
 		],
@@ -124,6 +139,6 @@
 	  }
 	],
 	"final_space": true,
-	"version": 2
-  }
+	"version": 3
+}
   
